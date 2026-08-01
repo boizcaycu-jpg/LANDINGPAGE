@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <rect width="800" height="300" fill="#047857"/>
+  <rect x="110" y="40" width="580" height="160" rx="50" ry="50" fill="none" stroke="#FFFFFF" stroke-width="14"/>
+  <text x="400" y="152" font-family="'Inter', Arial, sans-serif" font-weight="900" font-size="102" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">CACULUS</text>
+  <text x="400" y="252" font-family="'Inter', Arial, sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ĐÁNH GIÁ NĂNG LỰC HSA</text>
+</svg>
