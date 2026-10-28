@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://caculus-web-thpt.vercel.app"),
   title: "CACULUS THPTQG 2026 | Hệ Thống Luyện Đề Toán 12 & Tốt Nghiệp THPT (Chỉ 49K)",
   description:
-    "Chinh phục 9+ Toán 12 từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT 2026. Kho 40 đề & chuyên đề chuẩn cấu trúc mới (Trắc nghiệm, Đúng/Sai, Trả lời ngắn) tích hợp AI giải chi tiết chỉ 49.000đ.",
+    "Chinh phục 9+ Toán 12 từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT 2026. Kho 40 đề & chuyên đề chuẩn cấu trúc mới (Trắc nghiệm, Đúng/Sai, Trả lời ngắn) có đáp án và hướng dẫn giải chi tiết chỉ 49.000đ.",
   keywords: [
     "luyện đề toán 12",
     "ôn thi thpt quốc gia 2026",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CACULUS THPTQG 2026 | Hệ Thống Luyện Đề Toán 12 & Tốt Nghiệp THPT (Chỉ 49K)",
     description:
-      "Chinh phục 9+ Toán 12 từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT 2026. Kho 40 đề & chuyên đề chuẩn cấu trúc mới (Trắc nghiệm, Đúng/Sai, Trả lời ngắn) tích hợp AI giải chi tiết chỉ 49.000đ.",
+      "Chinh phục 9+ Toán 12 từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT 2026. Kho 40 đề & chuyên đề chuẩn cấu trúc mới (Trắc nghiệm, Đúng/Sai, Trả lời ngắn) có đáp án và hướng dẫn giải chi tiết chỉ 49.000đ.",
     type: "website",
     locale: "vi_VN",
     siteName: "CACULUS THPTQG",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CACULUS THPTQG 2026 | Hệ Thống Luyện Đề Toán 12 & Tốt Nghiệp THPT (Chỉ 49K)",
     description:
-      "Chinh phục 9+ Toán 12 từ Giữa Kì 1 đến Tốt Nghiệp THPT 2026. Kho 40 đề & chuyên đề chuẩn cấu trúc mới tích hợp AI giải chi tiết chỉ 49.000đ.",
+      "Chinh phục 9+ Toán 12 từ Giữa Kì 1 đến Tốt Nghiệp THPT 2026. Kho 40 đề & chuyên đề chuẩn cấu trúc mới có đáp án và lời giải chi tiết chỉ 49.000đ.",
     images: ["/assets/logo_main.png"],
   },
   robots: {
@@ -97,7 +97,7 @@ export default function RootLayout({
         "@type": "Course",
         "@id": "https://caculus-web-thpt.vercel.app/#course",
         "name": "Lộ Trình 40 Đề & Chuyên Đề Toán 12 Chuẩn GDPT 2018",
-        "description": "Kho 40 đề thi & chuyên đề ôn tập Toán 12 từ Giữa Kì 1 đến Tốt nghiệp THPT 2026 chuẩn cấu trúc 3 phần mới tích hợp AI giải chi tiết từng bước.",
+        "description": "Kho 40 đề thi & chuyên đề ôn tập Toán 12 từ Giữa Kì 1 đến Tốt nghiệp THPT 2026 chuẩn cấu trúc 3 phần mới có đáp án và hướng dẫn giải chi tiết từng bước.",
         "provider": {
           "@type": "EducationalOrganization",
           "name": "CACULUS THPTQG"
@@ -127,7 +127,7 @@ export default function RootLayout({
             "name": "Gói VIP 49.000đ của CACULUS THPTQG bao gồm những gì?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Gói VIP 49.000đ mở khóa toàn bộ 40 đề thi và chuyên đề từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT, không giới hạn lượt thi thử trong cả năm học, tích hợp công nghệ AI Gemini phân tích chi tiết từng bước và bảng xếp hạng thi đua toàn quốc."
+              "text": "Gói VIP 49.000đ mở khóa toàn bộ 40 đề thi và chuyên đề từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT, không giới hạn lượt thi thử trong cả năm học, tích hợp đáp án và hướng dẫn giải chi tiết từng bước cùng bảng xếp hạng thi đua toàn quốc."
             }
           },
           {
@@ -135,7 +135,7 @@ export default function RootLayout({
             "name": "Có được làm thử đề thi miễn phí trước khi đăng ký không?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Có. CACULUS THPTQG luôn mở Đề 01 Giữa Kì 1 hoàn toàn miễn phí cho tất cả học sinh trải nghiệm phòng thi trực tuyến bấm giờ, chấm điểm tự động và xem AI giải thích mà không cần trả bất kỳ khoản phí nào."
+              "text": "Có. CACULUS THPTQG luôn mở Đề 01 Giữa Kì 1 hoàn toàn miễn phí cho tất cả học sinh trải nghiệm phòng thi trực tuyến bấm giờ, chấm điểm tự động và xem đáp án giải thích chi tiết mà không cần trả bất kỳ khoản phí nào."
             }
           },
           {

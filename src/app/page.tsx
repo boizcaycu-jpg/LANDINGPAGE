@@ -13,12 +13,11 @@ import {
   HelpCircle,
   ShieldCheck,
   Smartphone,
-  Cpu,
+  BookOpen,
   BarChart3,
   Users,
   ExternalLink,
   Flame,
-  BookOpen,
   Lock,
   Unlock,
   Layers,
@@ -194,7 +193,7 @@ const GRADE_12_TOPICS = [
 const STUDENT_ACHIEVEMENTS = [
   "🔥 Đề 01 Giữa Kì 1 Đang Mở Miễn Phí",
   "⚡ Chuẩn 3 Phần: 12 Trắc nghiệm - 4 Đúng/Sai - 6 Trả lời ngắn",
-  "✨ Tích hợp AI Gemini Giải Chi Tiết Từng Bước",
+  "✨ Đầy Đủ Đáp Án & Hướng Dẫn Giải Chi Tiết",
   "🏆 Bảng Xếp Hạng Đua Top Toàn Quốc",
   "💎 Kích Hoạt VIP 49K Học Trọn Năm 12",
   "⏱️ Đồng Hồ Bấm Giờ Mô Phỏng Phòng Thi 90 Phút",
@@ -293,11 +292,11 @@ const FAQS = [
   },
   {
     q: "Gói VIP 49.000đ của CACULUS THPTQG bao gồm những gì?",
-    a: "Gói VIP 49.000đ mở khóa toàn bộ 40 đề thi và chuyên đề từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT, không giới hạn lượt thi thử trong cả năm học, tích hợp công nghệ AI Gemini phân tích chi tiết từng bước và bảng xếp hạng thi đua toàn quốc.",
+    a: "Gói VIP 49.000đ mở khóa toàn bộ 40 đề thi và chuyên đề từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT, không giới hạn lượt thi thử trong cả năm học, tích hợp đáp án và hướng dẫn giải chi tiết từng bước cùng bảng xếp hạng thi đua toàn quốc.",
   },
   {
     q: "Có được làm thử đề thi miễn phí trước khi đăng ký không?",
-    a: "Có. CACULUS THPTQG luôn mở Đề 01 Giữa Kì 1 hoàn toàn miễn phí cho tất cả học sinh trải nghiệm phòng thi trực tuyến bấm giờ, chấm điểm tự động và xem AI giải thích mà không cần trả bất kỳ khoản phí nào.",
+    a: "Có. CACULUS THPTQG luôn mở Đề 01 Giữa Kì 1 hoàn toàn miễn phí cho tất cả học sinh trải nghiệm phòng thi trực tuyến bấm giờ, chấm điểm tự động và xem hướng dẫn giải chi tiết mà không cần trả bất kỳ khoản phí nào.",
   },
   {
     q: "Kích hoạt tài khoản VIP 49K như thế nào và mất bao lâu?",
@@ -314,7 +313,7 @@ export default function LandingPage() {
   const [aiText, setAiText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const fullExplanation =
-    "✨ AI Gemini Flash Giải Chi Tiết: Ta có đạo hàm y' = 3x² - 6x. Cho y' = 0 ⇔ 3x(x - 2) = 0 ⇔ x = 0 hoặc x = 2. Dựa vào bảng biến thiên hoặc dấu của y'' = 6x - 6: Tại x = 0 ta có y''(0) = -6 < 0 nên hàm số đạt cực đại tại x = 0. Giá trị cực đại tương ứng là y_CĐ = f(0) = 0³ - 3(0)² + 2 = 2. Chọn đáp án chính xác là B.";
+    "✨ Hướng Dẫn Giải Chi Tiết: Ta có đạo hàm y' = 3x² - 6x. Cho y' = 0 ⇔ 3x(x - 2) = 0 ⇔ x = 0 hoặc x = 2. Dựa vào bảng biến thiên hoặc dấu của đạo hàm cấp hai y'' = 6x - 6: Tại x = 0 ta có y''(0) = -6 < 0 nên hàm số đạt cực đại tại điểm x = 0. Giá trị cực đại tương ứng của hàm số là y_CĐ = f(0) = 0³ - 3(0)² + 2 = 2. Chọn đáp án chính xác là B.";
 
   // Countdown timer in Simulator (89:59 down)
   const [secondsLeft, setSecondsLeft] = useState(89 * 60 + 59);
@@ -350,7 +349,7 @@ export default function LandingPage() {
         clearInterval(interval);
         setIsTyping(false);
       }
-    }, 18);
+    }, 16);
     return () => clearInterval(interval);
   }, [isTyping]);
 
@@ -476,7 +475,7 @@ export default function LandingPage() {
           <ScrollReveal variant="fade-up" delay="delay-0">
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-bold shadow-inner">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span>Chương Trình GDPT 2018 Mới • Kỳ Thi Tốt Nghiệp THPT 2026</span>
+              <span>Chương Trình GDPT 2018 Mới • Kỳ Thi Tốt Nghiệp THPT 2026 - 2027</span>
             </div>
           </ScrollReveal>
 
@@ -493,7 +492,7 @@ export default function LandingPage() {
             <p className="max-w-3xl mx-auto text-base sm:text-xl text-slate-300 font-normal leading-relaxed">
               Hệ thống phòng luyện đề toán trực tuyến mô phỏng 100% chuẩn cấu trúc 3 phần mới Bộ GD&ĐT:
               <strong className="text-white font-semibold"> 12 Trắc nghiệm • 4 Đúng/Sai • 6 Trả lời ngắn</strong>.
-              Tích hợp công nghệ <span className="text-cyan-300 font-bold">AI Gemini Flash</span> giải chi tiết từng bước mọi lúc mọi nơi.
+              Tích hợp <span className="text-cyan-300 font-bold">Đáp án & Lời giải chi tiết từng bước</span> chuẩn phương pháp sư phạm.
             </p>
           </ScrollReveal>
 
@@ -540,7 +539,7 @@ export default function LandingPage() {
                 <div className="text-3xl sm:text-4xl text-emerald-400">
                   <AnimatedCounter target={100} suffix="%" />
                 </div>
-                <div className="text-xs sm:text-sm font-bold text-slate-300">AI Gemini Giải Chi Tiết</div>
+                <div className="text-xs sm:text-sm font-bold text-slate-300">Lời Giải Chi Tiết</div>
                 <div className="text-[11px] text-slate-400">Tường tận phương pháp giải</div>
               </div>
 
@@ -557,7 +556,7 @@ export default function LandingPage() {
       </section>
 
       {/* ========================================== */}
-      {/* SECTION 3: LIVE EXAM ROOM & AI SIMULATOR   */}
+      {/* SECTION 3: LIVE EXAM ROOM & SIMULATOR      */}
       {/* ========================================== */}
       <section id="trai-nghiem" className="py-16 sm:py-24 px-4 sm:px-8 relative z-10">
         <div className="max-w-6xl mx-auto space-y-8">
@@ -567,10 +566,10 @@ export default function LandingPage() {
                 TRẢI NGHIỆM TRỰC QUAN LIVE
               </span>
               <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-                Phòng Luyện Đề Chuẩn Apple iOS & AI Gemini
+                Phòng Luyện Đề Chuẩn Cấu Trúc Bộ Giáo Dục & Đào Tạo 2027
               </h2>
               <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
-                Bấm vào các đáp án bên dưới để trải nghiệm ngay cảm giác phòng thi thực tế cùng AI giải thích tự động!
+                Bấm vào các đáp án bên dưới để trải nghiệm ngay cảm giác phòng thi thực tế cùng hướng dẫn giải chi tiết từng bước!
               </p>
             </div>
           </ScrollReveal>
@@ -603,7 +602,7 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Window Body: Question + Options + AI Solution */}
+              {/* Window Body: Question + Options + Detailed Solution */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
                 {/* Left: Question and Options */}
                 <div className="lg:col-span-7 space-y-6">
@@ -617,7 +616,7 @@ export default function LandingPage() {
                     </p>
                   </div>
 
-                  {/* 4 Interactive Apple Liquid Glass Option Buttons */}
+                  {/* 4 Interactive Option Buttons */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     {[
                       { key: "A", label: "y = 0", correct: false },
@@ -683,7 +682,7 @@ export default function LandingPage() {
                       <span>
                         {selectedOption === "B"
                           ? "🎉 Chính xác! Bạn nhận được +0.25 điểm."
-                          : "💡 Chưa chính xác! Bấm B để xem đáp án đúng và theo dõi AI phân tích."}
+                          : "💡 Chưa chính xác! Bấm B để xem đáp án đúng và theo dõi hướng dẫn giải chi tiết."}
                       </span>
                       <button
                         onClick={() => setSelectedOption(null)}
@@ -704,17 +703,17 @@ export default function LandingPage() {
                   </a>
                 </div>
 
-                {/* Right: AI Typewriter Solution Box */}
+                {/* Right: Detailed Solution Box */}
                 <div className="lg:col-span-5 flex flex-col">
                   <div className="flex-1 p-5 rounded-2xl bg-[#030612]/80 border border-cyan-500/30 flex flex-col justify-between space-y-4">
                     <div className="space-y-3">
                       <div className="flex items-center justify-between pb-3 border-b border-white/10">
                         <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider">
-                          <Sparkles className="w-4 h-4 text-cyan-300 animate-spin" />
-                          <span>Gemini AI Trợ Giảng</span>
+                          <BookOpen className="w-4 h-4 text-cyan-300" />
+                          <span>Hướng Dẫn Giải Chi Tiết</span>
                         </div>
                         <span className="text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-mono">
-                          Live Explanation
+                          Step-by-Step Solution
                         </span>
                       </div>
 
@@ -723,9 +722,9 @@ export default function LandingPage() {
                           <p>{aiText}</p>
                         ) : (
                           <div className="h-full flex flex-col items-center justify-center text-center text-slate-400 space-y-2 py-8">
-                            <Sparkles className="w-8 h-8 text-cyan-400/50" />
+                            <BookOpen className="w-8 h-8 text-cyan-400/50" />
                             <p className="text-xs">
-                              Bấm vào bất kỳ phương án A, B, C, D bên trái để kích hoạt AI phân tích giải pháp chi tiết!
+                              Bấm vào bất kỳ phương án A, B, C, D bên trái để kích hoạt xem phân tích phương pháp giải chi tiết!
                             </p>
                           </div>
                         )}
@@ -733,7 +732,7 @@ export default function LandingPage() {
                     </div>
 
                     <div className="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
-                      <span>Thuật toán giải tối ưu 2026</span>
+                      <span>Thuật toán giải tối ưu 2026 - 2027</span>
                       <span className="text-emerald-400 font-bold">100% Đề Thi Có Lời Giải</span>
                     </div>
                   </div>
@@ -890,7 +889,7 @@ export default function LandingPage() {
       </section>
 
       {/* ========================================== */}
-      {/* SECTION 5: 3D SPOTLIGHT APPLE BENTO GRID   */}
+      {/* SECTION 5: 3D SPOTLIGHT BENTO GRID         */}
       {/* ========================================== */}
       <section id="uu-diem" className="py-16 sm:py-24 px-4 sm:px-8 relative z-10 border-t border-white/10">
         <div className="max-w-6xl mx-auto space-y-12">
@@ -900,7 +899,7 @@ export default function LandingPage() {
                 TÍNH NĂNG VƯỢT TRỘI
               </span>
               <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-                Công Nghệ Apple Liquid Glass & Khảo Thí Thông Minh
+                Giao diện UI-UX Mô Phỏng Liquid Glass & Khảo Thí Thông Minh
               </h2>
               <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
                 Trải nghiệm học tập hiện đại chuẩn quốc tế, giúp thí sinh làm quen hoàn hảo với định dạng thi trên máy tính.
@@ -922,7 +921,7 @@ export default function LandingPage() {
                       Giao Diện Split-View & Thanh Dock 3 Phần
                     </h3>
                     <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                      Thiết kế chuẩn công thái học Apple: chia màn hình làm 2 cột độc lập (Bên trái đề bài & hình vẽ chất lượng cao, bên phải bảng câu hỏi và ô chọn đáp án). Dễ dàng chuyển đổi nhanh giữa Phần I (Trắc nghiệm), Phần II (Đúng/Sai) và Phần III (Trả lời ngắn).
+                      Thiết kế chuẩn công thái học: chia màn hình làm 2 cột độc lập (Bên trái đề bài & hình vẽ chất lượng cao, bên phải bảng câu hỏi và ô chọn đáp án). Dễ dàng chuyển đổi nhanh giữa Phần I (Trắc nghiệm), Phần II (Đúng/Sai) và Phần III (Trả lời ngắn).
                     </p>
                   </div>
 
@@ -936,24 +935,24 @@ export default function LandingPage() {
               </ScrollReveal>
             </div>
 
-            {/* Bento Card 2 (5 cols): AI Gemini Flash Solution */}
+            {/* Bento Card 2 (5 cols): Detailed Step-by-Step Solutions */}
             <div className="md:col-span-5">
               <ScrollReveal variant="fade-up" delay="delay-150">
                 <div className="glass-panel glass-card-interactive rounded-3xl p-7 sm:p-9 h-full flex flex-col justify-between space-y-6 border border-cyan-500/30">
                   <div className="space-y-4">
                     <div className="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-black">
-                      <Cpu className="w-6 h-6" />
+                      <BookOpen className="w-6 h-6" />
                     </div>
                     <h3 className="text-2xl font-black text-white">
-                      AI Gemini Flash Giải Chi Tiết Từng Câu
+                      Kho Lời Giải & Hướng Dẫn Chi Tiết Từng Câu
                     </h3>
                     <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                      Không còn nỗi lo gặp bài khó không có ai hướng dẫn. Ngay sau khi nộp bài hoặc bấm xem lời giải, AI phân tích từng bước, chỉ rõ công thức toán học và vạch trần bẫy đề thi.
+                      Không còn nỗi lo gặp bài khó không có lời giải. Mỗi câu hỏi đều có đáp án chuẩn xác cùng hướng dẫn giải từng bước chi tiết, phân tích bản chất toán học và vạch trần các bẫy thường gặp.
                     </p>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-200">
-                    ✨ Tốc độ phản hồi dưới 1.2s • Hỗ trợ KaTeX sắc nét
+                    📖 Lời giải sư phạm chuẩn mực • Trình bày công thức sắc nét
                   </div>
                 </div>
               </ScrollReveal>
@@ -968,7 +967,7 @@ export default function LandingPage() {
                       <ShieldCheck className="w-6 h-6" />
                     </div>
                     <h3 className="text-2xl font-black text-white">
-                      Chấm Điểm Lũy Tiến Chuẩn Quy Tắc 2026
+                      Chấm Điểm Lũy Tiến Chuẩn Quy Tắc 2026 - 2027
                     </h3>
                     <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                       Thuật toán chấm điểm tự động mô phỏng chính xác quy định Bộ GD&ĐT: Câu Đúng/Sai tính điểm lũy tiến (đúng 1 ý 0.1đ, 2 ý 0.25đ, 3 ý 0.5đ, 4 ý trọn vẹn 1.0đ).
@@ -994,7 +993,7 @@ export default function LandingPage() {
                       Đua Top Toàn Quốc & Tiết Kiệm 90% Chi Phí
                     </h3>
                     <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                      Bảng xếp hạng thời gian thực tạo động lực đua top mỗi ngày cùng hàng ngàn sĩ tử 2k8 cả nước. Tiết kiệm hàng triệu đồng so với việc mua sách và in đề photo truyền thống.
+                      Bảng xếp hạng thời gian thực tạo động lực đua top mỗi ngày cùng hàng ngàn sĩ tử cả nước. Tiết kiệm hàng triệu đồng so với việc mua sách và in đề photo truyền thống.
                     </p>
                   </div>
 
@@ -1062,7 +1061,7 @@ export default function LandingPage() {
                     </li>
                     <li className="flex items-center gap-2.5 text-slate-400">
                       <XCircle className="w-4 h-4 text-slate-500 shrink-0" />
-                      <span>Giới hạn tính năng AI giải chi tiết</span>
+                      <span>Giới hạn xem lời giải chi tiết</span>
                     </li>
                   </ul>
                 </div>
@@ -1108,7 +1107,7 @@ export default function LandingPage() {
                     </li>
                     <li className="flex items-center gap-2.5">
                       <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                      <strong className="text-cyan-300">AI Gemini giải chi tiết từng bước</strong>
+                      <strong className="text-cyan-300">Đáp án & lời giải chi tiết 100% câu hỏi</strong>
                     </li>
                     <li className="flex items-center gap-2.5">
                       <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
@@ -1295,7 +1294,7 @@ export default function LandingPage() {
                 <span className="font-black text-lg text-white">CACULUS THPTQG</span>
               </div>
               <p className="text-slate-400 leading-relaxed max-w-sm">
-                Hệ thống phòng luyện đề toán 12 trực tuyến chuẩn ma trận kỳ thi Tốt Nghiệp THPT 2026. Tích hợp AI Gemini giải chi tiết từng bước.
+                Hệ thống phòng luyện đề toán 12 trực tuyến chuẩn ma trận kỳ thi Tốt Nghiệp THPT 2026 - 2027. Đầy đủ đáp án và lời giải chi tiết từng bước.
               </p>
               <div className="text-xs text-slate-400">
                 Hotline Hỗ Trợ: <strong className="text-white font-mono">{HOTLINE}</strong> • Email: <strong className="text-white font-mono">{EMAIL}</strong>
@@ -1366,7 +1365,7 @@ export default function LandingPage() {
 
           <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
             <div>
-              © 2026 CACULUS THPTQG. Tất cả các quyền được bảo lưu. Thiết kế theo tiêu chuẩn Apple iOS Liquid Glass.
+              © 2026 CACULUS THPTQG. Tất cả các quyền được bảo lưu. Thiết kế theo tiêu chuẩn UI-UX Mô Phỏng Liquid Glass.
             </div>
             <div className="flex gap-4">
               <a href="#trai-nghiem" className="hover:text-white transition-colors">Thi Thử</a>
