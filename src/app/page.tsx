@@ -175,7 +175,7 @@ const EXTERNAL_LOGIN_URL = "https://caculus-web-thpt.vercel.app/login";
 const ZALO_GROUP_URL = "https://zalo.me/g/mw6rrjaosw86oamzaxy1";
 const YOUTUBE_URL = "https://www.youtube.com/@siiuuuu77777";
 const HOTLINE = "0767588269";
-const EMAIL = "support.caculus.edu.vn@gmail.com";
+const EMAIL = "support.parabol.edu.vn@gmail.com";
 
 const GRADE_12_TOPICS = [
   "01. Cấp số cộng & Cấp số nhân",
@@ -278,9 +278,9 @@ const STAGES = [
 ];
 
 const SOCIAL_PROOFS = [
-  "⚡ Vũ Hoàng Nam (THPTQG_082) vừa hoàn thành Đề Giữa Kì 1 Số 02 — 9.4 điểm",
-  "💎 Trần Khánh Linh vừa mở khóa Gói VIP 49K Toán 12 cả năm",
-  "🔥 Lê Minh Đức (THPTQG_119) vừa vươn lên Top 3 Bảng xếp hạng tuần",
+  "⚡ Vũ Hoàng Nam (PARABOL_082) vừa hoàn thành Đề Giữa Kì 1 Số 02 — 9.4 điểm",
+  "💎 Trần Khánh Linh vừa mở khóa Gói VIP 49K Toán 12 Parabol Khảo Thí",
+  "🔥 Lê Minh Đức (PARABOL_119) vừa vươn lên Top 3 Bảng xếp hạng tuần",
   "✨ Nguyễn Thảo Nhi vừa đạt 10.0 Đề Chuyên Đề 01: Khảo Sát Hàm Số",
   "🚀 Đặng Quốc Hưng vừa kích hoạt Combo Đôi Bạn 79K",
 ];
@@ -288,19 +288,19 @@ const SOCIAL_PROOFS = [
 const FAQS = [
   {
     q: "Cấu trúc đề thi Tốt nghiệp THPT môn Toán 2026 có gì mới?",
-    a: "Đề thi Toán 12 theo chương trình GDPT 2018 gồm 3 phần với 22 câu trong 90 phút: Phần I gồm 12 câu trắc nghiệm 4 lựa chọn (3.0 điểm); Phần II gồm 4 câu trắc nghiệm Đúng/Sai với thang điểm lũy tiến (4.0 điểm); Phần III gồm 6 câu trả lời ngắn điền số (3.0 điểm). CACULUS mô phỏng chính xác 100% cấu trúc này.",
+    a: "Đề thi Toán 12 theo chương trình GDPT 2018 gồm 3 phần với 22 câu trong 90 phút: Phần I gồm 12 câu trắc nghiệm 4 lựa chọn (3.0 điểm); Phần II gồm 4 câu trắc nghiệm Đúng/Sai với thang điểm lũy tiến (4.0 điểm); Phần III gồm 6 câu trả lời ngắn điền số (3.0 điểm). PARABOL KHẢO THÍ mô phỏng chính xác 100% cấu trúc này.",
   },
   {
-    q: "Gói VIP 49.000đ của CACULUS THPTQG bao gồm những gì?",
+    q: "Gói VIP 49.000đ của PARABOL KHẢO THÍ bao gồm những gì?",
     a: "Gói VIP 49.000đ mở khóa toàn bộ 40 đề thi và chuyên đề từ Giữa Kì 1, Học Kì 1, Giữa Kì 2, Cuối Kì 2 đến Tốt Nghiệp THPT, không giới hạn lượt thi thử trong cả năm học, tích hợp đáp án và hướng dẫn giải chi tiết từng bước cùng bảng xếp hạng thi đua toàn quốc.",
   },
   {
     q: "Có được làm thử đề thi miễn phí trước khi đăng ký không?",
-    a: "Có. CACULUS THPTQG luôn mở Đề 01 Giữa Kì 1 hoàn toàn miễn phí cho tất cả học sinh trải nghiệm phòng thi trực tuyến bấm giờ, chấm điểm tự động và xem hướng dẫn giải chi tiết mà không cần trả bất kỳ khoản phí nào.",
+    a: "Có. PARABOL KHẢO THÍ luôn mở Đề 01 Giữa Kì 1 hoàn toàn miễn phí cho tất cả học sinh trải nghiệm phòng thi trực tuyến bấm giờ, chấm điểm tự động và xem hướng dẫn giải chi tiết mà không cần trả bất kỳ khoản phí nào.",
   },
   {
     q: "Kích hoạt tài khoản VIP 49K như thế nào và mất bao lâu?",
-    a: "Sau khi đăng nhập tài khoản tại https://caculus-web-thpt.vercel.app/login, bạn quét mã QR chuyển khoản 49.000đ với nội dung tên tài khoản. Sau đó nhắn tin qua nhóm Zalo VIP hoặc Hotline 0767588269, admin hỗ trợ kích hoạt tức thì chỉ trong vòng 2 đến 5 phút.",
+    a: "Sau khi đăng nhập tài khoản tại Cổng Thi Trực Tuyến, bạn quét mã QR chuyển khoản 49.000đ với nội dung tên tài khoản. Sau đó nhắn tin qua nhóm Zalo VIP hoặc Hotline 0767588269, admin hỗ trợ kích hoạt tức thì chỉ trong vòng 2 đến 5 phút.",
   },
 ];
 
@@ -395,17 +395,19 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto glass-panel rounded-2xl px-5 sm:px-7 py-3 flex items-center justify-between">
           {/* Logo & Brand */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-[1px] shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform duration-300">
-              <div className="w-full h-full bg-[#070d1e] rounded-[11px] flex items-center justify-center font-black text-white text-lg tracking-wider">
-                C
-              </div>
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-white/5 border border-white/10 p-0.5 shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300">
+              <img
+                src="/logo-parabol-app.png"
+                alt="PARABOL KHẢO THÍ"
+                className="w-full h-full object-contain rounded-lg"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-extrabold text-base sm:text-lg tracking-tight text-white group-hover:text-blue-400 transition-colors">
-                CACULUS <span className="text-blue-500">THPTQG</span>
+                PARABOL <span className="text-blue-500">KHẢO THÍ</span>
               </span>
               <span className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">
-                Toán 12 • 2026 Chuẩn Mới
+                Toán 12 • Chuẩn GDPT 2018
               </span>
             </div>
           </Link>
@@ -999,7 +1001,7 @@ export default function LandingPage() {
 
                   <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between text-xs sm:text-sm font-bold">
                     <span className="text-slate-300">Chi phí in đề giấy: ~500.000đ</span>
-                    <span className="text-emerald-400 font-extrabold text-sm sm:text-base">CACULUS: Chỉ 49.000đ Trọn Gói</span>
+                    <span className="text-emerald-400 font-extrabold text-sm sm:text-base">PARABOL: Chỉ 49.000đ Trọn Gói</span>
                   </div>
                 </div>
               </ScrollReveal>
@@ -1198,7 +1200,7 @@ export default function LandingPage() {
                   <p className="text-xs text-slate-300">
                     Truy cập{" "}
                     <a href={EXTERNAL_LOGIN_URL} className="text-cyan-300 underline font-semibold">
-                      caculus-web-thpt.vercel.app/login
+                      Cổng Luyện Thi Trực Tuyến
                     </a>{" "}
                     để đăng nhập nhanh bằng Google hoặc SĐT.
                   </p>
@@ -1288,10 +1290,14 @@ export default function LandingPage() {
             {/* Brand Col */}
             <div className="md:col-span-5 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-black text-white text-base">
-                  C
+                <div className="w-10 h-10 rounded-xl overflow-hidden bg-white/5 border border-white/10 p-0.5 shadow-lg shadow-blue-500/20">
+                  <img
+                    src="/logo-parabol-app.png"
+                    alt="PARABOL KHẢO THÍ"
+                    className="w-full h-full object-contain rounded-lg"
+                  />
                 </div>
-                <span className="font-black text-lg text-white">CACULUS THPTQG</span>
+                <span className="font-black text-lg text-white">PARABOL KHẢO THÍ</span>
               </div>
               <p className="text-slate-400 leading-relaxed max-w-sm">
                 Hệ thống phòng luyện đề toán 12 trực tuyến chuẩn ma trận kỳ thi Tốt Nghiệp THPT 2026 - 2027. Đầy đủ đáp án và lời giải chi tiết từng bước.
@@ -1365,7 +1371,7 @@ export default function LandingPage() {
 
           <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
             <div>
-              © 2026 CACULUS THPTQG. Tất cả các quyền được bảo lưu. Thiết kế theo tiêu chuẩn UI-UX Mô Phỏng Liquid Glass.
+              © 2026 PARABOL KHẢO THÍ. Tất cả các quyền được bảo lưu. Thiết kế theo tiêu chuẩn UI-UX Mô Phỏng Liquid Glass.
             </div>
             <div className="flex gap-4">
               <a href="#trai-nghiem" className="hover:text-white transition-colors">Thi Thử</a>
